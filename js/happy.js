@@ -1,4 +1,14 @@
+function parseQueryString(url) { // url参数转对象
+    var url = url == null ? window.location.href : url,
+        search = url.split('?')[1]
+    if (!search) {
+        return {}
+    }
+    return JSON.parse(`{"${decodeURIComponent(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"')}"}`)
+}
 $(function () {
+    let name =  parseQueryString(window.location.href).userName
+    $('#name').text(name)
     setTimeout(function () {
         $('.name').animate({
             opacity:"1",

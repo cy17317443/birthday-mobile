@@ -1443,9 +1443,7 @@
 	/*图片*/
 	.ly-imgbox23{
 		position: absolute;
-		bottom: 0;
 		width: 100%;
-		height: 80%;
 		border-radius: 8px;
 		opacity:0;
 		overflow: hidden;
@@ -1661,8 +1659,6 @@
 	.ly-img23{
 		position: absolute;
 		width: 100%;
-		height: 80%;
-		bottom: 0;
 	}
 
 	.ly-box23 p, .ly-box21 p, .ly-box22 p {
@@ -2789,8 +2785,52 @@
 		transition-delay: 6s;
 	}
 
-	.ly-box81 p, .ly-box82 p {
+	.ly-box81 p, .ly-box82 p,.ly-box83 p, .ly-box84 p {
 		font-size: 2.5vw !important;
+	}
+	.ly-box83 {
+		width: 65%;
+		height: 60%;
+		border: 2px #CCC;
+		background-color: #fff;
+		background-color: rgba(255,255,255,0.6);
+		border-radius: 8px;
+		position: absolute;
+		left: 23%;
+		top: 35%;
+		overflow: hidden;
+		opacity: 0;
+		-webkit-transform: scale(0.5, 0.5);
+		transform: scale(0.5, 0.5);
+		transition: all 1s;
+	}
+	.active .ly-box83{
+		opacity: 0.9;
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+		transition-delay: 5s;
+	}
+	.ly-box84 {
+		width: 65%;
+		height: 25%;
+		border: 2px #CCC;
+		background-color: #fff;
+		background-color: rgba(255,255,255,0.6);
+		border-radius: 8px;
+		position: absolute;
+		left: 23%;
+		top:5%;
+		overflow: hidden;
+		opacity: 0;
+		-webkit-transform: scale(0.5, 0.5);
+		transform: scale(0.5, 0.5);
+		transition: all 1s;
+	}
+	.active .ly-box84{
+		opacity: 0.9;
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+		transition-delay: 2.5s;
 	}
 }
 
